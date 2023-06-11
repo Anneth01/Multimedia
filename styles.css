@@ -1,0 +1,171 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #022549;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #fefefe;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #555555;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #555555;
+}
+
+ol {
+  text-align: center;
+  list-style-position:inside
+}
+
+p{
+  text-align: center;
+}
+
+.bg-1 {
+  background-color: #faf7f7ce;
+  color: #333333;
+  padding: 100px 0;
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+.margin strong {
+  font-weight: bold;
+}
+
+.img-responsive {
+  margin: 0 auto;
+  background-color: transparent
+}
+
+
+.img-rounded {
+  border-radius: 0%;
+  background-color: transparent;}
+
+.bg-1,
+.bg-2,
+.bg-3,
+.bg-4
+.bg-5 {
+  background-color: #141732;
+  color: #333333;
+  padding: 100px 0;
+  animation: fadein 2s;
+}
+.bg-4{
+  width: 60%;
+}
+
+.bg-5{
+  height: 30%;
+}
+
+#footer{
+  background-color: #022549;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.container-fluid {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 100px 0;
+  position: relative; 
+}
+
+.container-fluid::before {
+  content: "";
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes emphasize {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animated-text {
+  display: inline-block;
+  animation-name: slide-in, emphasize;
+  animation-duration: 1s, 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.footer-icons {
+  font-size: 34px;
+}
+
+.footer-icons a {
+  color: #faf8f8;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #cee2f5;
+}
